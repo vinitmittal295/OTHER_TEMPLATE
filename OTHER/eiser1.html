@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .first-heading {
+        height: 5vh;
+        /* border: 1px solid black; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+      }
+      .first-left {
+        width: 25%;
+        /* border: 1px solid red; */
+        display: flex;
+      }
+      .first-phone {
+        width: 50%;
+        /* border: 1px solid black; */
+        /* border-right: 1px solid black;   */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        P {
+          font-size: 10px;
+        }
+      }
+      .p1 {
+        margin-right: 5px;
+      }
+      .first-email {
+        width: 50%;
+        /* border: 1px solid aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        P {
+          font-size: 10px;
+        }
+      }
+      .p2 {
+        margin-right: 5px;
+      }
+      .first-mid {
+        width: 50%;
+        /* border: 1px solid green; */
+      }
+      .first-right {
+        width: 25%;
+        /* border: 1px solid aqua; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            font-size: 9px;
+            margin: 8px;
+
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      /* second heading start here */
+
+      .second-heading {
+        height: 11vh;
+        /* border: 1px solid black; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+      }
+      .second-logo {
+        width: 15%;
+        /* border: 1px solid aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .second-icon-logo {
+        width: 20%;
+        /* border: 1px solid red; */
+        display: flex;
+      }
+      .second-icon-logo-div {
+        width: 25%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .second-icon {
+        width: 65%;
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style-type: none;
+          li {
+            margin: 20px;
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      /* third photo start here*/
+      .third-photo {
+        height: 120vh;
+        border: 1px solid black;
+        background-image: url(https://themewagon.github.io/eiser/img/banner/banner-bg.jpg);
+        display: flex;
+        align-items: center;
+      }
+      .third-photo-div {
+        width: 30%;
+        height: 40vh;
+        /* border: 1px solid black; */
+        margin-left: 100px;
+        h1 {
+          color: white;
+          font-size: 1rem;
+        }
+        p {
+          font-size: 25px;
+        }
+        h3 {
+          color: rgb(255, 255, 255);
+        }
+        button {
+          padding: 13px;
+          background-color: rgb(113, 205, 20);
+          color: white;
+        }
+      }
+      .show1 {
+        color: rgb(113, 205, 20);
+      }
+      .style1 {
+        color: rgb(113, 205, 20);
+      }
+      .your1 {
+        color: rgb(255, 255, 255);
+      }
+      .personel1 {
+        color: rgb(255, 255, 255);
+      }
+
+      /* delivery icons css */
+
+      .delivery-icon {
+        height: 40vh;
+        /* border: 1px solid black; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+      }
+      .delivery-icon-div {
+        width: 25%;
+        height: 40vh;
+        /* border: 1px solid red; */
+      }
+      .delivery-icon-div-upper {
+        height: 30vh;
+        border: 1px solid #eff2f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          font-size: 15px;
+          font-weight: 500;
+        }
+        a {
+          font-size: 25px;
+          color: black;
+          font-weight: 500;
+        }
+      }
+      .extra {
+        height: 8vh;
+        /* border: 1px solid black; */
+      }
+      /* featured product start here  */
+
+      .featured-prpduct {
+        height: 15vh;
+        /* border: 1px solid black; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+          font-size: 24px;
+          color: #2a2a2a;
+          margin-bottom: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-weight: normal;
+          line-height: 24px;
+          color: #797979;
+          margin-bottom: 0px;
+        }
+      }
+
+      /* bag image css */
+      .product-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        height: 70vh;
+      }
+
+      .product-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        height: 70vh;
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .product-image {
+        position: relative;
+        width: 100%;
+        height: 55vh;
+      }
+
+      .product-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: opacity 0.3s;
+      }
+
+      .product-info {
+        padding: 20px;
+      }
+
+      .product-info h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .product-info .price {
+        font-weight: bold;
+        color: #e67e22;
+      }
+
+      .icons {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+
+      .icons a {
+        background: #e67e22;
+        color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      .product-card:hover .icons {
+        bottom: 10px;
+        opacity: 1;
+      }
+
+      .product-card:hover img {
+        opacity: 0.7;
+      }
+
+      /* mens-pic css */
+
+      .men-pic {
+        height: 80vh;
+        /* border: 1px solid black; */
+        background-image: url(https://themewagon.github.io/eiser/img/offer-bg.png);
+        background-size: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .men-pic-content {
+        height: 45vh;
+        width: 35%;
+        /* border: 1px solid black ; */
+        margin-left: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+          font-size: 24px;
+          font-weight: 300;
+          color: #4a4a4a;
+        }
+        h2 {
+          font-size: 100px;
+          line-height: 80px;
+          color: #2a2a2a;
+          /* margin-bottom: 0px; */
+          font-weight: 700;
+          margin-top: 10px;
+        }
+        button {
+          background: #71cd14;
+          padding: 0px 32px;
+          letter-spacing: 0.25px;
+          font-weight: 500;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          line-height: 44px;
+          text-align: center;
+          border: 1px solid #71cd14;
+          cursor: pointer;
+          /* transition: all 300ms linear 0s; */
+          border-radius: 5px;
+        }
+      }
+      .extra-margin2 {
+        height: 15vh;
+        /* border: 1px solid black; */
+      }
+      .new-product-content {
+        height: 15vh;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .extra-margin-3 {
+        height: 10vh;
+        /* border: 1px solid black; */
+      }
+      .product-image1 {
+        height: 90vh;
+        /* border: 1px solid black; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product-image-left {
+        height: 85vh;
+        /* border: 1px solid green; */
+        background: #f6f6f6;
+        width: 48%;
+        margin-right: 20px;
+      }
+      .product-image-right {
+        height: 90vh;
+        /* border: 1px solid greenyellow; */
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-image-left-div1 {
+        height: 35vh;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .product-image-left-div2 {
+        height: 25vh;
+        /* border: 1px solid red; */
+        img {
+          width: 80%;
+        }
+      }
+      .product-image-left-div3 {
+        height: 30vh;
+        /* border: 1px solid aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        button {
+          display: inline-block;
+          background: #71cd14;
+          padding: 0px 32px;
+          letter-spacing: 0.25px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 44px;
+          outline: none !important;
+          box-shadow: none !important;
+          text-align: center;
+          border: 1px solid #71cd14;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: all 300ms linear 0s;
+          border-radius: 5px;
+        }
+      }
+
+      .product-image-right-div {
+        height: 40vh;
+        /* border: 1px solid red; */
+        width: 45%;
+        /* width: 500px; */
+        margin: 10px;
+      }
+      .product-image-right-div-upper {
+        height: 25vh;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: 25vh;
+        }
+      }
+      .product-image-right-div-under {
+        height: 15vh;
+        /* border: 1px solid green; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-heading">
+      <div class="first-left">
+        <div class="first-phone">
+          <p><span class="p1">PHONE:</span>+01256 25235<span></span></p>
+        </div>
+        <div class="first-email">
+          <p><span class="p2">EMAIL:</span><span>INFO@EISER.COM</span></p>
+        </div>
+      </div>
+      <div class="first-mid"></div>
+      <div class="first-right">
+        <ul>
+          <li><a href="">GIFT CARD</a></li>
+          <li><a class="bd1" href="">TRACK ORDER</a></li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="second-heading">
+      <div class="second-logo">
+        <img src="https://themewagon.github.io/eiser/img/logo.png" alt="" />
+      </div>
+      <div class="second-icon">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">SHOP</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">PAGES</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="second-icon-logo">
+        <div class="second-icon-logo-div">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="second-icon-logo-div">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="second-icon-logo-div">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="second-icon-logo-div">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- photo start here -->
+    <div class="third-photo">
+      <div class="third-photo-div">
+        <h1>MEN COLLECTION</h1>
+        <p><span class="show1">Show</span><span class="your1"> Your</span></p>
+        <p>
+          <span class="personel1">Personel </span
+          ><span class="style1">Style</span>
+        </p>
+        <h3>fowl saw dry which a above together place</h3>
+        <button>VIEW COLLECTION</button>
+      </div>
+    </div>
+    <!-- delivery icons start here -->
+
+    <div class="delivery-icon">
+      <div class="delivery-icon-div">
+        <div class="delivery-icon-div-upper">
+          <a href="\"><i class="fa-solid fa-money-bill"></i></a>
+          <h3>MONEY BACK GURANTEE</h3>
+          <p>shall open divide a one</p>
+        </div>
+        <div class="delivery-icon-div-under"></div>
+      </div>
+      <div class="delivery-icon-div">
+        <div class="delivery-icon-div-upper">
+          <a href="\"><i class="fa-solid fa-truck"></i></a>
+          <h3>FREE GURANTEE</h3>
+          <p>shall open divide a one</p>
+        </div>
+      </div>
+      <div class="delivery-icon-div">
+        <div class="delivery-icon-div-upper">
+          <a href="\"><i class="fa-solid fa-headphones"></i></a>
+          <h3>ALWAYS SUPPORT</h3>
+          <p>shall open divide a one</p>
+        </div>
+      </div>
+      <div class="delivery-icon-div">
+        <div class="delivery-icon-div-upper">
+          <a href="\"><i class="fa-solid fa-bitcoin-sign"></i></a>
+          <h3>SECURE PAYMENT</h3>
+          <p>shall open divide a one</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- extra margin start here -->
+    <div class="extra"></div>
+
+    <!-- featured product start here -->
+    <div class="featured-prpduct">
+      <h2><span>FEATURED PRODUCT</span></h2>
+      <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <!-- bag iamge  -->
+    <div class="product-container">
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-1.jpg"
+            alt="Product Image"
+          />
+          <div class="icons">
+            <a href="#" title="View">&#128065;</a>
+            <a href="#" title="Heart">&#10084;</a>
+            <a href="#" title="Buy">&#128722;</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>LATEST MENS'S SNEAKER</h3>
+          <p class="price">$49.99</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-2.jpg"
+            alt="Product Image"
+          />
+          <div class="icons">
+            <a href="#" title="View">&#128065;</a>
+            <a href="#" title="Heart">&#10084;</a>
+            <a href="#" title="Buy">&#128722;</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>RED WOMEN PURSES</h3>
+          <p class="price">$59.99</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-3.jpg"
+            alt="Product Image"
+          />
+          <div class="icons">
+            <a href="#" title="View">&#128065;</a>
+            <a href="#" title="Heart">&#10084;</a>
+            <a href="#" title="Buy">&#128722;</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>MENS STYLIST SMART WATCH</h3>
+          <p class="price">$69.99</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENS PHOTO -->
+    <div class="men-pic">
+      <div class="men-pic-content">
+        <h3>ALL MEN'S COLLECTION</h3>
+        <h2>50% OFF</h2>
+        <button>DISCOVER NOW</button>
+      </div>
+    </div>
+    <!-- extra-margin -->
+    <div class="extra-margin2"></div>
+
+    <!-- new-product-content -->
+    <div class="new-product-content">
+      <h2>NEW PRODUCTS</h2>
+      <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <!-- extra-margin-3 -->
+    <div class="extra-margin-3"></div>
+
+    <!-- new product-image -->
+    <div class="product-image1">
+      <div class="product-image-left">
+        <div class="product-image-left-div1">
+          <h5>COLLECTION OF 2019</h5>
+          <h3>MENS'S SUMMER TSHIRT</h3>
+        </div>
+        <div class="product-image-left-div2">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/new-product/new-product1.png"
+            alt=""
+          />
+        </div>
+        <div class="product-image-left-div3">
+          <h4>$120.70</h4>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+      <div class="product-image-right">
+        <div class="product-image-right-div">
+          <div class="product-image-right-div-upper">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-image-right-div-under">
+            <h4>NIKE LATEST SNEAKER</h4>
+            <p>$25.00</p>
+          </div>
+        </div>
+        <div class="product-image-right-div">
+          <div class="product-image-right-div-upper">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-image-right-div-under">
+            <h4>MENS DENIM JEANS</h4>
+            <p>$25.00</p>
+          </div>
+        </div>
+        <div class="product-image-right-div">
+          <div class="product-image-right-div-upper">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-image-right-div-under">
+            <h4>QUARTZ HAND WATCH\</h4>
+            <p>$25.00</p>
+          </div>
+        </div>
+        <div class="product-image-right-div">
+          <div class="product-image-right-div-upper">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-image-right-div-under">
+            <h4>ADIDIAS SPORT SHOE</h4>
+            <p>$25.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
