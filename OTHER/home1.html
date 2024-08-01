@@ -120,6 +120,9 @@
         align-items: center;
 
       }
+      .drop-show:hover{
+        color:#71cd14;
+      }
       .drop-open{
         display: none;
         position:absolute;
@@ -144,14 +147,45 @@
         a{
             text-decoration: none;
             color: black;
-            font-size: 20px;
+            font-size: 10px;
         }
       }
       .drop-details:hover{
         background-color: greenyellow;
         color: #eff2f3;
       }
+      .drop-open-2{
+        display: none;
+        position:absolute;
+        top: 100px;
+        left: 650px;
+        width: 125px;
+        height: 45px;
+        background-color: white;
 
+      }
+      .drop-down:hover .drop-open-2{
+        display: block;
+
+      }
+      .drop-details-2{
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        a{
+            text-decoration: none;
+            /* text-align: center; */
+            color:  black;
+            font-size: 10px;
+        }
+      }
+      .drop-details-2:hover{
+        background-color: #71cd14;
+        color: white;
+      }
 
       /* third photo start here*/
       .third-photo {
@@ -641,17 +675,21 @@
                <div class="drop-details"> <a href="">shop category</a></div>
                 <div class="drop-details"><a href="">product details</a></div>
                <div class="drop-details"><a href="">product checkout</a></div> 
-               <div class="drop-details"><a href="">shopping cart</a></div> 
+               <div class="drop-details"><a href="shoping-cart.html">shopping cart</a></div> 
             </div>
         </div>
         <div class="drop-down">
             <p>BLOG</p>
+            <div class="drop-open-2">
+                <div class="drop-details-2"><a href="">BLOG</a></div>
+                <div class="drop-details-2"><a href="">BLOG DETAILS</a></div>
+            </div>
         </div>
         <div class="drop-down">
             <p>PAGES</p>
         </div>
         <div class="drop-down">
-            <p>CONTACT</p>
+            <a href="contact.html">CONTACT</a>
 
         </div>
       </div>
