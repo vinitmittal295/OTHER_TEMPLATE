@@ -108,25 +108,50 @@
         align-items: center;
       }
       .second-icon {
-        width: 65%;
-        /* border: 1px solid green; */
         display: flex;
         justify-content: center;
         align-items: center;
-        ul {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          list-style-type: none;
-          li {
-            margin: 20px;
-            a {
-              color: black;
-              text-decoration: none;
-            }
-          }
+        width: 700px;
+      }
+      .drop-down{
+        margin: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .drop-open{
+        display: none;
+        position:absolute;
+        top: 100px;
+        left: 550px;
+        width: 300px;
+        height: 230px;
+        /* background-color:white; */
+      }
+      .drop-down:hover .drop-open{
+        display:block;
+
+      }
+      .drop-details{
+        width: 70%;
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
         }
       }
+      .drop-details:hover{
+        background-color: greenyellow;
+        color: #eff2f3;
+      }
+
 
       /* third photo start here*/
       .third-photo {
@@ -607,13 +632,28 @@
         <img src="https://themewagon.github.io/eiser/img/logo.png" alt="" />
       </div>
       <div class="second-icon">
-        <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="">SHOP</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">PAGES</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+        <div class="drop-down">
+            <a href="">HOME</a>
+        </div>
+        <div class="drop-down">
+            <p class="drop-show">SHOP</p>
+            <div class="drop-open">
+               <div class="drop-details"> <a href="">shop category</a></div>
+                <div class="drop-details"><a href="">product details</a></div>
+               <div class="drop-details"><a href="">product checkout</a></div> 
+               <div class="drop-details"><a href="">shopping cart</a></div> 
+            </div>
+        </div>
+        <div class="drop-down">
+            <p>BLOG</p>
+        </div>
+        <div class="drop-down">
+            <p>PAGES</p>
+        </div>
+        <div class="drop-down">
+            <p>CONTACT</p>
+
+        </div>
       </div>
       <div class="second-icon-logo">
         <div class="second-icon-logo-div">
